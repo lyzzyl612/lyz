@@ -1,1 +1,105 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>志哥网站</title><link href=./static/css/app.e6d8035baa98662cf766a35a6afea171.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.7ed0ff2e90a703b419c9.js></script><script type=text/javascript src=./static/js/app.b0d52df0de59786879d1.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    *{
+      margin:0;
+      padding:0;
+
+    }
+
+    #div1{
+      width:1349px;
+
+
+      position: absolute;
+      top: 150px;
+
+    }
+
+
+    #div2 {
+      width: 200px;
+      height: 200px;
+      float: left;
+
+      margin-top: 310px;
+      border-radius: 200px;
+      background-color: orange;
+      box-shadow: -5px -5px 10px 0 red inset,
+      25px 15px 15px 0 #ff7800 inset,
+      25px 25px 10px 0 #ff5a19 inset,
+      35px 35px 10px 0 #ff5a19 inset,
+      60px 65px 10px 0 #ff560e inset,
+      120px 125px 10px 0 #ff560e inset,
+      -35px -35px 10px 0 #ff1231 inset,
+      -80px -80px 10px 0 #8b230f inset;
+      animation: myMove 10s linear;
+
+    }
+    @keyframes  myMove {
+      0%{
+        margin-top:310px;
+      }
+      20%{
+        margin-left: 180px;
+        margin-top: 150px;
+      }
+      40%{
+        margin-left: 400px;
+        margin-top: 100px;
+      }
+      50%{
+        margin-left:600px ;
+        margin-top:50px;
+      }
+      60%{
+        margin-left: 700px;
+        margin-top:100px;
+      }
+      80%{
+        margin-left: 1000px;
+        margin-top: 200px;
+      }
+      100%{
+        margin-left: 1100px;
+        margin-top: 310px;
+      }
+    }
+    .divBox{
+      position: fixed;
+      top: 200px;
+      left: 350px;
+      width: 500px;
+      height: 500px;
+      background-color: #00ad6b;
+    }
+    .hide{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<audio src="girlfriend.mp3" controls="controls" style="position:absolute;">
+</audio>
+<div id="div1">
+  <img src="./index.png" alt="">
+</div>
+<div id="div2"></div>
+<div class="clickMe hide" onclick="hahaha()" style="position: absolute;top: 122px;">感谢欣赏我的动画，请点击我</div>
+<div class="divBox hide"></div>
+<script type="text/javascript">
+  var clickMe = document.getElementsByClassName('clickMe')[0]
+  setTimeout(()=>{
+      clickMe.classList.remove("hide");
+  },10000)
+  function  hahaha (){
+      var xixi = document.getElementsByClassName('divBox')[0]
+          xixi.classList.remove("hide");
+  }
+</script>
+
+</body>
+</html>
