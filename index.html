@@ -36,7 +36,7 @@
       120px 125px 10px 0 #ff560e inset,
       -35px -35px 10px 0 #ff1231 inset,
       -80px -80px 10px 0 #8b230f inset;
-      animation: myMove 10s linear;
+      animation: myMove 1s linear;
 
     }
     @keyframes  myMove {
@@ -74,7 +74,7 @@
       left: 350px;
       width: 500px;
       height: 500px;
-      background-color: #00ad6b;
+      background-color: white;
     }
     .hide{
       display: none;
@@ -88,13 +88,12 @@
   <img src="./index.png" alt="">
 </div>
 <div id="div2"></div>
-<div class="clickMe hide" onclick="hahaha()" style="position: absolute;top: 122px;">感谢欣赏我的动画，请点击我</div>
-<div class="divBox hide"></div>
+<div class="clickMe" onclick="hahaha()" style="position: absolute;top: 122px;">感谢欣赏我的动画，请点击我</div>
+<div class="divBox hide">
+  <img src="./erweima.png" style="width: 450px;height: 450px;padding: 25px;">
+</div>
 <script type="text/javascript">
-  var clickMe = document.getElementsByClassName('clickMe')[0]
-  setTimeout(()=>{
-      clickMe.classList.remove("hide");
-  },10000)
+
   function  hahaha (){
       var xixi = document.getElementsByClassName('divBox')[0]
           xixi.classList.remove("hide");
